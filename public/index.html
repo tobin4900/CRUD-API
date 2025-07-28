@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Save Name</title>
+</head>
+<body>
+  <h1>Enter Your Name to enter db</h1>
+  <form action="/nextpage" method="POST">
+    <input type="text" name="name" required />
+    <button type="submit">Submit</button>
+  </form>
+  <hr>
+  <h1>Enter Your Name to search in db</h1>
+  <form action="/search" method="GET">
+    <input type="text" name="name" placeholder="Enter name">
+    <button type="submit">Search</button>
+  </form>
+  <hr>
+<h1>Enter Your Name to search using route param</h1>
+<input type="text" id="paramInput" placeholder="Enter name" />
+<button onclick="searchByParam()">Search via Param</button>
+<hr>
+<h1>Show All Names in Database</h1>
+<form action="/allnames" method="GET">
+  <button type="submit">Show All Names</button>
+</form>
+
+
+<script>
+  function searchByParam() {
+    const name = document.getElementById('paramInput').value;
+    if (name.trim()) {
+      window.location.href = `/search/${(name)}`;
+    }
+  }
+</script>
+</body>
+</html>
