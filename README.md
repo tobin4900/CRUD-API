@@ -22,9 +22,7 @@ MongoDB with Mongoose
 Body-Parser
 
 Project Structure
-php
-Copy
-Edit
+
 crud-api/
 │── public/             # HTML form for name submission
 │── server.js           # Main server file
@@ -32,35 +30,25 @@ crud-api/
 Installation & Setup
 Clone the repository:
 
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/crud-api.git
+
+git clone https://github.com/tobin4900/crud-api.git
 Navigate to the folder:
 
-bash
-Copy
-Edit
+
 cd crud-api
 Install dependencies:
 
-bash
-Copy
-Edit
+
 npm install
 Start MongoDB on your local machine (default port 27017).
 
 Run the server:
 
-bash
-Copy
-Edit
+
 npm start
 Visit:
 
-arduino
-Copy
-Edit
+
 http://localhost:3000
 API Endpoints (Documentation)
 POST /nextpage
@@ -68,9 +56,7 @@ Inserts a new name into the database
 
 Request body:
 
-json
-Copy
-Edit
+
 { "name": "John" }
 Response: HTML message confirming the name was saved
 
